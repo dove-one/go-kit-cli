@@ -20,11 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-package main
+package go_kit_cli
 
-import (
-	"github.com/dove-one/go-kil-cli/cmd"
-)
+import "go-kit-cli/cmd"
 
 func main() {
 	cmd.Execute()

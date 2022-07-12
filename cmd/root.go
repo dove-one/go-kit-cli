@@ -50,10 +50,10 @@ func initConfig() {
 		home, err := os.UserHomeDir()
 		cobra.CheckErr(err)
 
-		// Search config in home directory with name ".go-micro-frame-cli" (without extension).
+		// Search config in home directory with name ".go-kit-cli" (without extension).
 		viper.AddConfigPath(home)
 		viper.SetConfigType("yaml")
-		viper.SetConfigName(".go-micro-frame-cli")
+		viper.SetConfigName(".go-kit-cli")
 	}
 
 	viper.AutomaticEnv() // read in environment variables that match
