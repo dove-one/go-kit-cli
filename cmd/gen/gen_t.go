@@ -1,7 +1,7 @@
 package gen
 
 import (
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/util"
 	"strings"
 
 	"github.com/gogf/gf-cli/v2/library/mlog"
@@ -21,8 +21,8 @@ func runGen(req GenReq) {
 	path := req.TestDir + "/" + req.TableName + "_test.go"
 
 	context := gstr.ReplaceByMap(tContext, g.MapStrStr{
-		"CategoryAttr":              GetJsonTagFromCase(req.TableName, "Camel"),
-		"goodsProto":                req.ProtoName + "Proto",
+		"CategoryAttr":                     GetJsonTagFromCase(req.TableName, "Camel"),
+		"goodsProto":                       req.ProtoName + "Proto",
 		"mall.com/mall-common/proto/goods": "mall.com/mall-common/proto/" + req.ProtoName,
 	})
 	if err := gfile.PutContents(path, strings.TrimSpace(context)); err != nil {
@@ -37,8 +37,8 @@ func runGenClient(req GenReq) {
 	path := req.TestDir + "/client.go"
 
 	context := gstr.ReplaceByMap(tClientContext, g.MapStrStr{
-		"192.168.106.1":             util.GetOutboundIP(),
-		"goodsProto":                req.ProtoName + "Proto",
+		"192.168.106.1":                    util.GetOutboundIP(),
+		"goodsProto":                       req.ProtoName + "Proto",
 		"mall.com/mall-common/proto/goods": "mall.com/mall-common/proto/" + req.ProtoName,
 	})
 	if err := gfile.PutContents(path, strings.TrimSpace(context)); err != nil {

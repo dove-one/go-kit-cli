@@ -4,8 +4,8 @@ import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gfile"
 	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/jettjia/go-micro-frame-cli/constant"
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/constant"
+	"go-kit-cli/util"
 	"strings"
 )
 

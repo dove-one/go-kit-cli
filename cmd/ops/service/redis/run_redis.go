@@ -4,7 +4,7 @@ import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gproc"
 
-	"github.com/jettjia/go-micro-frame-cli/constant"
+	"go-kit-cli/constant"
 )
 
 func RunRedis() {

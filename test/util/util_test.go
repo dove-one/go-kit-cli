@@ -2,7 +2,7 @@ package util
 
 import (
 	"fmt"
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/util"
 	"testing"
 )
 

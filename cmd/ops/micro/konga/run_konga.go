@@ -7,9 +7,9 @@ import (
 
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/util"
 
-	"github.com/jettjia/go-micro-frame-cli/constant"
+	"go-kit-cli/constant"
 )
 
 func RunKonga() {
@@ -55,7 +55,7 @@ func RunKonga() {
 	//}
 
 	// 2. 安装kong
-	if !util.IsExists("kong-"+constant.KongVersion+".amd64.rpm") {
+	if !util.IsExists("kong-" + constant.KongVersion + ".amd64.rpm") {
 		_, err = gproc.ShellExec(`curl -Lo kong-` + constant.KongVersion + `.amd64.rpm $( rpm --eval "https://download.konghq.com/gateway-2.x-centos-%{centos_ver}/Packages/k/kong-` + constant.KongVersion + `.el%{centos_ver}.amd64.rpm")`)
 		if err != nil {
 			mlog.Fatal("down kong-"+constant.KongVersion+".amd64.rpm err", err)

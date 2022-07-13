@@ -2,7 +2,7 @@ package gen
 
 import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/util"
 	"os"
 )
 

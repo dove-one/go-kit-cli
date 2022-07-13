@@ -2,19 +2,19 @@ package ops
 
 import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/cicd/drone"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/cicd/gogs"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/cicd/harbor"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/initGo"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/micro/consul"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/micro/jaeger"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/micro/konga"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/micro/nacos"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/service/docker"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/service/es"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/service/mysql"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/service/rabbitmq"
-	"github.com/jettjia/go-micro-frame-cli/cmd/ops/service/redis"
+	"go-kit-cli/cmd/ops/cicd/drone"
+	"go-kit-cli/cmd/ops/cicd/gogs"
+	"go-kit-cli/cmd/ops/cicd/harbor"
+	"go-kit-cli/cmd/ops/initGo"
+	"go-kit-cli/cmd/ops/micro/consul"
+	"go-kit-cli/cmd/ops/micro/jaeger"
+	"go-kit-cli/cmd/ops/micro/konga"
+	"go-kit-cli/cmd/ops/micro/nacos"
+	"go-kit-cli/cmd/ops/service/docker"
+	"go-kit-cli/cmd/ops/service/es"
+	"go-kit-cli/cmd/ops/service/mysql"
+	"go-kit-cli/cmd/ops/service/rabbitmq"
+	"go-kit-cli/cmd/ops/service/redis"
 )
 
 func RunOps(args []string) {

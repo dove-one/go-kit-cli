@@ -3,14 +3,14 @@ package consul
 import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/jettjia/go-micro-frame-cli/constant"
+	"go-kit-cli/constant"
 )
 
 func RunConsul() {
 	mlog.Print("init consul:" + constant.ConsulVersion + " start...")
 
 	// docker pull image
-	has, _ := gproc.ShellExec("docker images -q consul:"+constant.ConsulVersion)
+	has, _ := gproc.ShellExec("docker images -q consul:" + constant.ConsulVersion)
 	if has == "" {
 		_, err := gproc.ShellExec("sudo docker pull consul:" + constant.ConsulVersion)
 		if err != nil {

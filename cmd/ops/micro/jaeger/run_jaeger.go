@@ -3,14 +3,14 @@ package jaeger
 import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/jettjia/go-micro-frame-cli/constant"
+	"go-kit-cli/constant"
 )
 
 func RunJaeger() {
 	mlog.Print("init jaeger:" + constant.JaegerVersion + " start...")
 
 	// docker pull image
-	has, _ := gproc.ShellExec("docker images -q jaegertracing/all-in-one:"+constant.JaegerVersion)
+	has, _ := gproc.ShellExec("docker images -q jaegertracing/all-in-one:" + constant.JaegerVersion)
 	if has == "" {
 		_, err := gproc.ShellExec("sudo docker pull jaegertracing/all-in-one:" + constant.JaegerVersion)
 		if err != nil {

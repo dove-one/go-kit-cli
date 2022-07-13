@@ -3,7 +3,7 @@ package docker
 import (
 	"github.com/gogf/gf-cli/v2/library/mlog"
 	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/jettjia/go-micro-frame-cli/util"
+	"go-kit-cli/util"
 )
 
 func RunDockerCompose() {
